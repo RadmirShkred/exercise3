@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import CalculateBlock from "./CalculateBlock";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+    state = {
+        counter: 0,
+        name: "",
+    };
+
+    changeState = (inputValue) => {
+        const newCount = this.state.counter + 1;
+        this.setState({
+            counter: newCount,
+            name: inputValue,
+        });
+    };
+
+    render() {
+        return (
+            <div className={styles.app}>
+                <CalculateBlock state={this.state} changeState={this.changeState}/>
+            </div>
+        );
+    }
 }
 
 export default App;
