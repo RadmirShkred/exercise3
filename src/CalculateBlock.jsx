@@ -11,7 +11,6 @@ class CalculateBlock extends React.Component {
         const inputValue = this.refInputChange.current.value;
         this.props.changeState(inputValue);
         this.refInputChange.current.value = "";
-        alert(inputValue);
     };
 
     render() {
@@ -20,6 +19,9 @@ class CalculateBlock extends React.Component {
                 <span className={styles.number}>{this.props.state.counter}</span>
                 <input type="text" ref={this.refInputChange} className={styles.input}/>
                 <button onClick={this.onClickChange} className={styles.button}>Ввести</button>
+                <div className={styles.names}>
+                    {this.props.state.names.map(name => <div className={styles.name}>{name}</div>)}
+                </div>
             </div>
         );
     }

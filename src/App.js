@@ -6,14 +6,15 @@ class App extends React.Component {
 
     state = {
         counter: 0,
-        name: "",
+        names: [],
     };
 
     changeState = (inputValue) => {
         const newCount = this.state.counter + 1;
+        const namesList = [...this.state.names, inputValue];
         this.setState({
             counter: newCount,
-            name: inputValue,
+            names: namesList,
         });
     };
 

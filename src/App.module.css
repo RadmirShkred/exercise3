@@ -40,4 +40,20 @@
     background-color: blue;
     border: 1px solid blue;
     padding: 7px 10px;
+    margin-bottom: 30px;
+}
+
+.names {
+    width: 100%;
+    height: fit-content;
+}
+
+.name {
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 10px;
+    color: white;
+    font-size: 18px;
+    background-color: #0077cb;
+    margin: 10px auto;
 }
