@@ -17,7 +17,6 @@ class CalculateBlock extends React.Component {
     onTypeChange = (e) => {
         const newLetter = e.currentTarget.value;
         this.setState({currentName: newLetter});
-        console.log(this.state.currentName)
     };
 
     onClickChange = () => {

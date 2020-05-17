@@ -1,6 +1,13 @@
 .tuesday {
-display: flex;
+    display: flex;
+    height: 90vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.tuesday p {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
 }

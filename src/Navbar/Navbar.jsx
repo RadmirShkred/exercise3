@@ -1,13 +1,39 @@
 import React from 'react';
-import classes from './Navbar.module.css';
+import classes from './Navbar.module.scss';
 import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className={classes.navbar}>
-            <NavLink className={classes.item} to="/monday">Monday</NavLink>
-            <NavLink className={classes.item} to="/tuesday">Tuesday</NavLink>
-        </div>
+
+        <>
+            <input id="burger" type="checkbox"/>
+
+            <label htmlFor="burger">
+                <span>
+                </span>
+                <span>
+                </span>
+                <span>
+                </span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li>
+                        <NavLink to="/monday"
+                                 className={classes.navLink}
+                                 activeClassName={classes.active}>Monday
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/tuesday"
+                                 className={classes.navLink}
+                                 activeClassName={classes.active}>Tuesday
+                        </NavLink>
+                    </li>
+                </ul>
+            </nav>
+        </>
     );
 }
 

@@ -9,6 +9,7 @@ class App extends React.Component {
 
     state = {
         counter: 0,
+        key: 0,
         names: [],
     };
 
@@ -17,6 +18,7 @@ class App extends React.Component {
         const namesList = [...this.state.names, inputValue];
         this.setState({
             counter: newCount,
+            key: newCount,
             names: namesList,
         });
     };
