@@ -34,6 +34,11 @@
     margin-bottom: 20px;
 }
 
+.inputError {
+    margin-bottom: 20px;
+    border-color: red;
+}
+
 .button {
     font-size: 18px;
     color: white;
