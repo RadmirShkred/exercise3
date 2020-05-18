@@ -47,8 +47,8 @@ class CalculateBlock extends React.Component {
                     Ввести
                 </button>
                 <div className={classes.names}>
-                    {this.props.state.names.map(name => <div className={classes.name}
-                                                             key={this.props.state.names.indexOf(name) + 1}>{name}</div>)}
+                    {this.props.state.names.map((name, index) => <div className={classes.name}
+                                                                      key={index + 1}>{name}</div>)}
                 </div>
             </div>
         );
