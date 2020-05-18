@@ -9,12 +9,9 @@ const Navbar = () => {
             <input id="burger" type="checkbox"/>
 
             <label htmlFor="burger">
-                <span>
-                </span>
-                <span>
-                </span>
-                <span>
-                </span>
+                <span/>
+                <span/>
+                <span/>
             </label>
 
             <nav>
